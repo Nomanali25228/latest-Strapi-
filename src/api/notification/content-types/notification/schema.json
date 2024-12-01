@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notifications",
+  "info": {
+    "singularName": "notification",
+    "pluralName": "notifications",
+    "displayName": "notification",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "emailSent": {
+      "type": "boolean",
+      "default": false
+    },
+    "firstname": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::firstname.firstname"
+    }
+  }
+}
