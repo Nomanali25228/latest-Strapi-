@@ -89,6 +89,12 @@
     },
     "Destinations": {
       "type": "string"
+    },
+    "blog_posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog-post.blog-post",
+      "mappedBy": "blogPost"
     }
   }
 }
