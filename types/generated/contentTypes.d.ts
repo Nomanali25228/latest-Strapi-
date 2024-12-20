@@ -501,6 +501,7 @@ export interface ApiFirstnameFirstname extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    customerId: Schema.Attribute.String;
     DateBirth: Schema.Attribute.Date;
     Destinations: Schema.Attribute.String;
     DoYouHaveAFoodpreference: Schema.Attribute.String;

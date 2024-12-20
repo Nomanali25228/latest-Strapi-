@@ -95,6 +95,9 @@
       "relation": "manyToMany",
       "target": "api::blog-post.blog-post",
       "mappedBy": "blogPost"
+    },
+    "customerId": {
+      "type": "string"
     }
   }
 }
